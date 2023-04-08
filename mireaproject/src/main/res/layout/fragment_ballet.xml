@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dances.BalletFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Бале́т (фр. ballet, от итал. ballare — танцевать) — вид сценического искусства; спектакль, содержание которого воплощается в музыкально-хореографических образах. В основе классического балетного спектакля лежит определённый сюжет, драматургический замысел, либретто, в XX веке появился бессюжетный балет, драматургия которого основана на развитии, заложенном в музыке. Основными видами танца в балете являются классический танец и характерный танец, к которому, начиная с XIX века, относятся народные и национальные танцы, переработанные для исполнения в балетном спектакле. Немаловажную роль играет пантомима, с помощью которой актёры передают чувства героев, их «разговор» между собой, суть происходящего, а во многих спектаклях — также и гротеск."
+        android:textAlignment="viewStart" />
+
+</FrameLayout>

@@ -33,11 +33,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClickFirstActivity(View view) {
-        fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment1).commit();
-    }
-
-    public void onClickSecondActivity(View view) {
-        fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment2).commit();
-    }
 }

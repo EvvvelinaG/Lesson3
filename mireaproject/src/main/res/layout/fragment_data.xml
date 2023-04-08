@@ -1,14 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.DataFragment">
+    android:orientation="vertical"
+    tools:context=".DataFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Современный танец"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Уличный танец"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/modernBtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="10"
+                android:contentDescription="Современный танец"
+                android:onClick="onClickModern"
+                android:scaleType="centerInside"
+                android:src="@drawable/modern_dance" />
+
+            <ImageButton
+                android:id="@+id/streetBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:contentDescription="Уличные танцы"
+                android:onClick="onClick"
+                android:scaleType="centerInside"
+                android:src="@drawable/cb4274661ec94c935e842440569abde1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Народный танец"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Эстрадный танец"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/folkBtn"
+                android:layout_width="255dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="Народный танец"
+                android:onClick="onClick"
+                android:scaleType="centerInside"
+                android:src="@drawable/scale_1200" />
+
+            <ImageButton
+                android:id="@+id/estradeBtn"
+                android:layout_width="255dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="Эстрадный танец"
+                android:onClick="onClick"
+                android:scaleType="centerInside"
+                android:src="@drawable/estrad_dance" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Балет"
+                android:onClick="onClick"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Бальные танцы"
+                android:onClick="onClick"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/balletBtn"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="255dp"
+                android:layout_height="200dp"
+                android:layout_weight="10"
+                android:contentDescription="Балет"
+                android:scaleType="centerInside"
+                android:src="@drawable/wilfride_piollet_danse_dans__le_lac_des_cygnes_____l_op_ra_de_paris__1977_"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ballroomBtn"
+                android:layout_width="255dp"
+                android:layout_height="200dp"
+                android:layout_weight="10"
+                android:contentDescription="Бальные танцы"
+                android:scaleType="centerInside"
+                android:src="@drawable/ballroom_dance"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

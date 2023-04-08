@@ -7,15 +7,15 @@
     tools:context=".ShareActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dev_favorite_book_value"
+        android:text="Тут появится ваша любимая книга"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
@@ -33,11 +33,11 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="255dp"
+        android:layout_height="116dp"
         android:ems="10"
+        android:hint="Введите название и Вашей любимой книги"
         android:inputType="textPersonName"
-        android:hint="Enter book name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

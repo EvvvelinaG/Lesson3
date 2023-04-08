@@ -27,4 +27,9 @@
         android:name="ru.mirea.gilyazoivaer.mireaproject.BrouserFragment"
         android:label="fragment_brouser2"
         tools:layout="@layout/fragment_brouser2" />
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
 </navigation>

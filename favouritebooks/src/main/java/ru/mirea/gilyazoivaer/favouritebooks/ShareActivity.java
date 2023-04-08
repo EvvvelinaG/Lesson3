@@ -19,20 +19,24 @@ public class ShareActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
 
-        textView = findViewById(R.id.textView);
+        textView = findViewById(R.id.textViewBook);
         editText = findViewById(R.id.editText);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             TextView ageView = findViewById(R.id.textViewBook);
             String university = extras.getString(MainActivity.KEY);
             ageView.setText(String.format("Мой любимая книга: %s", university));
+
         }
 // Отправка введенных пользователем данных по нажатию на кнопку
-        Intent data = new Intent();
-        data.putExtra(MainActivity.USER_MESSAGE, text);
-        setResult(Activity.RESULT_OK, data);
-        finish();
+
     }
 
 
+    public void returnToMainActivity(View view) {
+        Intent data = new Intent();
+        data.putExtra(MainActivity.USER_MESSAGE, editText.getText().toString());
+        setResult(Activity.RESULT_OK, data);
+        finish();
+    }
 }

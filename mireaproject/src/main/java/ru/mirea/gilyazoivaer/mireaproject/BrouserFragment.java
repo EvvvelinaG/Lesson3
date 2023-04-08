@@ -23,12 +23,10 @@ public class BrouserFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
     View fragmentView = inflater.inflate(R.layout.fragment_brouser2, group, false);
-        // включаем поддержку JavaScript
+        webView = (WebView) fragmentView.findViewById(R.id.browser);
+    // включаем поддержку JavaScript
+        webView.loadUrl("http://google.com");
         webView.getSettings().setJavaScriptEnabled(true);
-        // указываем страницу загрузки
-        webView.loadUrl("https://google.com");
-
-    binder = ActivityMainBinding.bind(fragmentView);
     webView.setWebViewClient(new WebViewClient());
     return fragmentView;
     }
