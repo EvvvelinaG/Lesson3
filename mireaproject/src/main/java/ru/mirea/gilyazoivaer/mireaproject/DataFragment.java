@@ -9,12 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.BalletFragment;
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.BallroomFragment;
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.EstradeFragment;
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.FolkFragment;
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.ModernFragment;
-import ru.mirea.gilyazoivaer.mireaproject.ui.dances.StreetFragment;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,8 +17,8 @@ import ru.mirea.gilyazoivaer.mireaproject.ui.dances.StreetFragment;
  * create an instance of this fragment.
  */
 public class DataFragment extends Fragment {
-    Fragment balletFr, ballroomFr,folkFr,streetFr,estradeFr,modernafr;
-    FragmentManager fragmentManager;
+    //Fragment balletFr, ballroomFr,folkFr,streetFr,estradeFr,modernafr;
+    //FragmentManager fragmentManager;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -70,16 +65,11 @@ public class DataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        balletFr = new BalletFragment();
-        ballroomFr = new BallroomFragment();
-        streetFr=new StreetFragment();
-        modernafr=new ModernFragment();
-        folkFr=new FolkFragment();
-        estradeFr=new EstradeFragment();
+
         return inflater.inflate(R.layout.fragment_data, container, false);
     }
 
-    public void onClick(View view) {
+    /*public void onClick(View view) {
 
         switch (view.getId()){
             case R.id.modernBtn:
@@ -104,6 +94,7 @@ public class DataFragment extends Fragment {
                 break;
         }
 
-    }
+    }*/
+
 
 }

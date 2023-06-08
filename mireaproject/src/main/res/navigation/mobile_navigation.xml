@@ -32,4 +32,36 @@
         android:name="ru.mirea.gilyazoivaer.mireaproject.DataFragment"
         android:label="fragment_data"
         tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.music.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/camera"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/nav_record"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.record.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.sensor.SensorFragment"
+        android:label="fragment_sensor"
+        tools:layout="@layout/fragment_sensor" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="ru.mirea.gilyazoivaer.mireaproject.ui.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+
+
 </navigation>
