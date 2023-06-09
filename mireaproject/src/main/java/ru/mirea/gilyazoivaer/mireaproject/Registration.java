@@ -71,8 +71,9 @@ public class Registration extends AppCompatActivity {
     // [END on_start_check_user]
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            Intent intent = new Intent(Registration.this, MainActivity.class);
-            startActivity(intent);
+            //Intent intent = new Intent(Registration.this, MainActivity.class);
+            //startActivity(intent);
+            //finish();
 //            binding.statusTextView.setText(getString(R.string.emailpassword_status_fmt, user.getEmail(), user.isEmailVerified()));
 //            binding.detailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
 //            binding.button2.setVisibility(View.GONE);
@@ -128,6 +129,9 @@ public class Registration extends AppCompatActivity {
 // Sign in success, update UI with the signed-in user'sinformation
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent = new Intent(Registration.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
                             updateUI(user);
                         } else {
 // If sign in fails, display a message to the user.
